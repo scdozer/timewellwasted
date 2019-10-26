@@ -19,7 +19,7 @@ const UPDATE_PLAYLIST = 'UPDATE_PLAYLIST';
 
 export function getAllPosts(){
   const morePosts =
-    axios.get('http://www.suckboards.com/wp-json/wp/v2/posts?per_page=13') .then ( response => {
+    axios.get('https://timewellwasted.online/wp/wp-json/wp/v2/posts?per_page=13') .then ( response => {
       return response.data
     })
     return {
@@ -31,7 +31,7 @@ export function getAllPosts(){
 
 export function getMorePosts(offset){
   const posts =
-    axios.get(`http://www.suckboards.com/wp-json/wp/v2/posts?per_page=10&offset=${offset}`) .then ( response => {
+    axios.get(`https://timewellwasted.online/wp/wp-json/wp/v2/posts?per_page=10&offset=${offset}`) .then ( response => {
       return response.data
     })
     console.log(posts)

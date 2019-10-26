@@ -7,15 +7,17 @@
   width: 33.33%;
   float: left;
   background: no-repeat center center;
+  border: 1px solid #66ff00;
   background-size: cover!important;
+  box-sizing: border-box;
 }
 .singlePost:nth-of-type(5n){
   width: 66.666%;
   float:left;
 }
-.singlePost h1{background: rgba(9,9,9,.5); color: white; padding: 2px 5px}
+.singlePostLink h1{background: rgba(9,9,9,.5); color: white; padding: 20px}
 
-.singlePost:hover h1{
+.singlePostLink:hover h1{
   background: #000;
 }
 

@@ -16,7 +16,7 @@ class SinglePlayer extends Component {
 
   componentDidMount(){
 
-    axios.get(`http://suckboards.com/?rest_route=/wp/v2/posts/${this.props.match.params.id}`).then( response => {
+    axios.get(`https://timewellwasted.online/wp/?rest_route=/wp/v2/posts/${this.props.match.params.id}`).then( response => {
           this.setState({
             postData: response.data
         })

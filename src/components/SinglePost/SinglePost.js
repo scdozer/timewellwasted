@@ -20,15 +20,16 @@ class SinglePost extends Component {
       background: `url(${background})`
     }
     return(
-        <div key = {this.state.info.id} className="singlePost" style={singlePostStyle}>
-          <Link to = {`/post/${this.state.info.id}`} className="singlePostLink"><h1 dangerouslySetInnerHTML={{__html: this.state.info.title.rendered}} /></Link>
+      <Link to = {`/post/${this.state.info.id}`} className="singlePostLink">
+        <div key = {this.state.info.id} style={singlePostStyle}>
+          <h1 dangerouslySetInnerHTML={{__html: this.state.info.title.rendered}} />
 
-          <div className="watchAndAdd">
+          {/* <div className="watchAndAdd">
             <Link to = {`/post/${this.state.info.id}`} className="singlePostLink"><p>Watch</p></Link>
             <p onClick = { () => this.props.addToPlaylist(this.props.info)}>Add</p>
-          </div>
-
+          </div> */}
         </div>
+      </Link>
     )
   }
 
